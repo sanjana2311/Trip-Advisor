@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hp.tripmanager">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/travel"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".ExpenseDetailsActivity" />
+        <activity android:name=".TripDetailsActivity" />
+        <activity android:name=".FrontActivity" />
+        <activity android:name=".ViewTripWiseExpenseActivity" />
+        <activity android:name=".UpdateTripDetailsActivity" />
+        <activity android:name=".DeleteTripDetailsActivity" />
+        <activity android:name=".UpdateActivity" />
+        <activity android:name=".TripWiseViewActivity" />
+        <activity android:name=".ViewBalanceActivity" />
+        <activity android:name=".ViewBalanceDetailsActivity" />
+        <activity android:name=".TrialActivity" />
+        <activity android:name=".ViewDetailsActivity" />
+        <activity android:name=".TripWiseView1Activity" />
+        <activity android:name=".TripWiseView2Activity" />
+        <activity android:name=".ViewCategoryWiseExpenseActivity" />
+        <activity android:name=".ViewDayWiseExpenseActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hp.tripmanager.FrontActivity"
+    android:background="@drawable/bck2">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/img2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:onClick="add" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/img21"
+        android:onClick="expense" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="         Add Trip"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="     Add Expense"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="65dp"
+        android:src="@drawable/img12"
+        android:onClick="view" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:id="@+id/imageView5"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/img22"
+        android:onClick="balance" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="       View Trips"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="    Check Balance"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5" />
+
+
+</RelativeLayout>

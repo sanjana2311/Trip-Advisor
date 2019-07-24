@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hp.tripmanager.TripDetailsActivity"
+    android:background="@drawable/travel"
+    >
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Trip ID :"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="FROM :"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TO :"
+        android:id="@+id/textView13"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1"
+        android:layout_below="@+id/textView12"
+        android:layout_toStartOf="@+id/textView13" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_alignBottom="@+id/spinner1"
+        android:layout_toEndOf="@+id/spinner1" />
+
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Starting Date :"
+        android:id="@+id/textView14"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Today"
+        android:id="@+id/textView5"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_toStartOf="@+id/imageButton" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageButton"
+        android:src="@android:drawable/ic_menu_my_calendar"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignEnd="@+id/editText1"
+        android:onClick="datechose" />
+
+    <TextView
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="End Date :"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/imageButton"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/editText1"
+        android:onClick="submit" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Today"
+        android:id="@+id/textView6"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageButton2"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_toEndOf="@+id/textView6"
+        android:src="@android:drawable/ic_menu_my_calendar"
+        android:onClick="datechoice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Approved Budget :"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/imageButton2"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD DETAILS"
+        android:id="@+id/button1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="submit"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_toEndOf="@+id/button1"
+        />
+
+</RelativeLayout>
